@@ -1,65 +1,72 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="СТРОЙ. НАДЁЖНО. — строительство, реконструкция и ремонт коммерческих и частных объектов.">
-  <title>ФОРМАТ — строим надёжно</title>
+  <meta name="description" content="BUILD. RELIABLY. — construction, reconstruction and renovation for commercial and private projects.">
+  <title>FORMAT — built reliably</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <style>
+    .language-switcher{display:flex;align-items:center;gap:8px;margin-left:auto;margin-right:28px;font:11px var(--mono);text-transform:uppercase}
+    .language-switcher button{border:0;background:transparent;color:var(--muted);font:inherit;cursor:pointer;padding:4px}
+    .language-switcher button.active{color:var(--graphite);font-weight:500;border-bottom:1px solid var(--orange)}
+    @media(max-width:800px){.language-switcher{margin-left:auto;margin-right:18px}.language-switcher button{padding:2px}}
+  </style>
 </head>
 <body>
   <header class="site-header">
-    <a class="logo" href="#top" aria-label="Формат — на главную"><span>Ф</span>ОРМАТ<span class="logo-dot">.</span></a>
-    <nav class="nav" aria-label="Основная навигация">
-      <a href="#projects">Проекты</a>
-      <a href="#about">О компании</a>
-      <a href="#services">Услуги</a>
+    <a class="logo" href="#top" aria-label="FORMAT — home"><span>F</span>ORMAT<span class="logo-dot">.</span></a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#projects" data-i18n="navProjects">Projects</a>
+      <a href="#about" data-i18n="navAbout">About</a>
+      <a href="#services" data-i18n="navServices">Services</a>
     </nav>
-    <a class="header-contact" href="#contact">Обсудить проект <span>↗</span></a>
-    <button class="menu-toggle" aria-label="Открыть меню" aria-expanded="false"><i></i><i></i></button>
+    <div class="language-switcher" aria-label="Language selector"><button class="active" data-language="en">EN</button><span>/</span><button data-language="ru">RU</button></div>
+    <a class="header-contact" href="#contact"><span data-i18n="headerContact">Discuss a project</span> <span>↗</span></a>
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false"><i></i><i></i></button>
   </header>
 
   <main id="top">
     <section class="hero">
       <div class="hero-content">
-        <div class="eyebrow"><span class="eyebrow-line"></span> Строительная компания · с 2012 года</div>
-        <h1>СТРОЙ.<br><em>НАДЁЖНО.</em></h1>
-        <p class="hero-lead">Создаём пространства, которые работают на вас сегодня и остаются ценными завтра.</p>
-        <div class="hero-actions"><a class="button button-orange" href="#projects">Наши проекты <span>↗</span></a><a class="text-link" href="#contact">Рассказать о задаче <span>↗</span></a></div>
+        <div class="eyebrow"><span class="eyebrow-line"></span> <span data-i18n="eyebrow">Construction company · since 2012</span></div>
+        <h1><span data-i18n="heroTitle1">BUILD.</span><br><em data-i18n="heroTitle2">RELIABLY.</em></h1>
+        <p class="hero-lead" data-i18n="heroLead">We create spaces that work for you today and stay valuable tomorrow.</p>
+        <div class="hero-actions"><a class="button button-orange" href="#projects"><span data-i18n="projectsCta">Our projects</span> <span>↗</span></a><a class="text-link" href="#contact"><span data-i18n="tellUs">Tell us about your project</span> <span>↗</span></a></div>
       </div>
       <div class="hero-visual">
-        <div class="image-frame"><img src="https://images.unsplash.com/photo-1503387762-592де?auto=format&fit=crop&w=1400&q=85" alt="Современное здание в процессе строительства" onerror="this.src='https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85'"></div>
-        <div class="hero-stamp"><span>BUILD</span><strong>12</strong><small>лет опыта</small></div>
+        <div class="image-frame"><img src="https://images.unsplash.com/photo-1503387762-5928c4f9f1b2?auto=format&fit=crop&w=1400&q=85" alt="Modern building under construction"></div>
+        <div class="hero-stamp"><span>BUILD</span><strong>12</strong><small data-i18n="years">years of experience</small></div>
         <div class="hero-coordinate">55°45'07.0"N<br>37°37'13.2"E</div>
       </div>
-      <div class="scroll-hint">Листайте вниз <span>↓</span></div>
+      <div class="scroll-hint"><span data-i18n="scroll">Scroll down</span> <span>↓</span></div>
     </section>
 
-    <section class="marquee" aria-label="Наши направления"><div class="marquee-track"><span>Строительство</span><b>✳</b><span>Реконструкция</span><b>✳</b><span>Ремонт</span><b>✳</b><span>Строительство</span><b>✳</b><span>Реконструкция</span><b>✳</b><span>Ремонт</span></div></section>
+    <section class="marquee" aria-label="Our services"><div class="marquee-track"><span data-i18n="construction">Construction</span><b>✳</b><span data-i18n="reconstruction">Reconstruction</span><b>✳</b><span data-i18n="renovation">Renovation</span><b>✳</b><span data-i18n="construction">Construction</span><b>✳</b><span data-i18n="reconstruction">Reconstruction</span><b>✳</b><span data-i18n="renovation">Renovation</span></div></section>
 
     <section class="intro section-pad" id="about">
-      <div class="section-label">01 / О компании</div>
-      <div class="intro-copy"><h2>Не просто строим.<br><span>Создаём основу.</span></h2><p>ФОРМАТ — команда архитекторов, инженеров и мастеров. Берём на себя весь цикл: от идеи и проектирования до сдачи объекта.</p><a class="arrow-link" href="#contact">Узнать больше <span>↗</span></a></div>
-      <div class="intro-number">10<span>+</span><small>построенных<br>объектов</small></div>
+      <div class="section-label">01 / <span data-i18n="aboutLabel">About us</span></div>
+      <div class="intro-copy"><h2><span data-i18n="introTitle1">We don't just build.</span><br><span data-i18n="introTitle2">We create foundations.</span></h2><p data-i18n="introText">FORMAT is a team of architects, engineers and craftspeople. We take care of the full cycle — from the first idea and design to handover.</p><a class="arrow-link" href="#contact"><span data-i18n="learnMore">Learn more</span> <span>↗</span></a></div>
+      <div class="intro-number">10<span>+</span><small><span data-i18n="objects">completed<br>projects</span></small></div>
     </section>
 
     <section class="projects section-pad" id="projects">
-      <div class="section-head"><div class="section-label">02 / Избранные проекты</div><a class="arrow-link" href="#contact">Все проекты <span>↗</span></a></div>
+      <div class="section-head"><div class="section-label">02 / <span data-i18n="featured">Featured projects</span></div><a class="arrow-link" href="#contact"><span data-i18n="allProjects">All projects</span> <span>↗</span></a></div>
       <div class="project-grid">
-        <a class="project-card project-large" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85" alt="Офисное здание в Москве"><span class="project-arrow">↗</span></div><div class="project-meta"><h3>Бизнес-центр «Север»</h3><span>Москва · 2024</span></div></a>
-        <a class="project-card project-small" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Интерьер частного дома"><span class="project-arrow">↗</span></div><div class="project-meta"><h3>Дом на реке</h3><span>Подмосковье · 2023</span></div></a>
-        <a class="project-card project-small second" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Современный интерьер офиса"><span class="project-arrow">↗</span></div><div class="project-meta"><h3>Офис «Точка»</h3><span>Москва · 2023</span></div></a>
+        <a class="project-card project-large" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1400&q=85" alt="Modern office building"><span class="project-arrow">↗</span></div><div class="project-meta"><h3>Sever Business Center</h3><span>Moscow · 2024</span></div></a>
+        <a class="project-card project-small" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=85" alt="Private house interior"><span class="project-arrow">↗</span></div><div class="project-meta"><h3>House by the River</h3><span>Moscow region · 2023</span></div></a>
+        <a class="project-card project-small second" href="#contact"><div class="project-image"><img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85" alt="Contemporary office interior"><span class="project-arrow">↗</span></div><div class="project-meta"><h3>Tochka Office</h3><span>Moscow · 2023</span></div></a>
       </div>
     </section>
 
-    <section class="services section-pad" id="services"><div class="section-label">03 / Что мы делаем</div><div class="service-list"><div class="service-item"><span>01</span><h3>Генеральный подряд</h3><p>Организуем весь процесс и отвечаем за результат.</p><b>↗</b></div><div class="service-item"><span>02</span><h3>Проектирование</h3><p>Находим точные решения для амбициозных задач.</p><b>↗</b></div><div class="service-item"><span>03</span><h3>Реконструкция</h3><p>Даём существующим зданиям новую жизнь.</p><b>↗</b></div><div class="service-item"><span>04</span><h3>Отделка и ремонт</h3><p>Создаём интерьер, в котором хочется быть.</p><b>↗</b></div></div></section>
+    <section class="services section-pad" id="services"><div class="section-label">03 / <span data-i18n="whatWeDo">What we do</span></div><div class="service-list"><div class="service-item"><span>01</span><h3 data-i18n="service1">General contracting</h3><p data-i18n="service1Text">We organise the entire process and take responsibility for the result.</p><b>↗</b></div><div class="service-item"><span>02</span><h3 data-i18n="service2">Design & planning</h3><p data-i18n="service2Text">We find precise solutions for ambitious briefs.</p><b>↗</b></div><div class="service-item"><span>03</span><h3 data-i18n="service3">Reconstruction</h3><p data-i18n="service3Text">We give existing buildings a new life.</p><b>↗</b></div><div class="service-item"><span>04</span><h3 data-i18n="service4">Finishing & renovation</h3><p data-i18n="service4Text">We create interiors people want to spend time in.</p><b>↗</b></div></div></section>
 
-    <section class="contact section-pad" id="contact"><div class="contact-inner"><div class="section-label">04 / Давайте знакомиться</div><h2>Есть проект?<br><em>Построим.</em></h2><a class="button button-orange" href="mailto:hello@format.build">hello@format.build <span>↗</span></a><div class="contact-details"><span>+7 495 120-42-12</span><span>Москва · ул. Правды, 24</span></div></div><div class="contact-side">© 2024 ФОРМАТ<br><span>Строим с характером.</span></div></section>
+    <section class="contact section-pad" id="contact"><div class="contact-inner"><div class="section-label">04 / <span data-i18n="contactLabel">Let's talk</span></div><h2><span data-i18n="contactTitle1">Have a project?</span><br><em data-i18n="contactTitle2">Let's build it.</em></h2><a class="button button-orange" href="mailto:hello@format.build">hello@format.build <span>↗</span></a><div class="contact-details"><span>+7 495 120-42-12</span><span>Moscow · Pravdy St., 24</span></div></div><div class="contact-side">© 2026 FORMAT<br><span data-i18n="footerTagline">Building with character.</span></div></section>
   </main>
-  <footer class="footer"><a class="logo" href="#top"><span>Ф</span>ОРМАТ<span class="logo-dot">.</span></a><span>Строительство · Реконструкция · Ремонт</span><a href="#top">Наверх ↑</a></footer>
+  <footer class="footer"><a class="logo" href="#top"><span>F</span>ORMAT<span class="logo-dot">.</span></a><span data-i18n="footerServices">Construction · Reconstruction · Renovation</span><a href="#top" data-i18n="backTop">Back to top ↑</a></footer>
   <script src="script.js"></script>
 </body>
 </html>

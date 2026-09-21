@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FORMAT — презентация сайта</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root{--ink:#171d22;--ink2:#222c33;--orange:#f28c28;--paper:#f4f1eb;--muted:#6e767b;--line:#d8d0c5}
+    *{box-sizing:border-box}html{background:#d7d2cb}body{margin:0;color:var(--ink);font-family:Manrope,Arial,sans-serif;background:var(--paper);line-height:1.55}
+    .page{width:210mm;min-height:297mm;margin:0 auto;padding:20mm 18mm;background:var(--paper);page-break-after:always;position:relative;overflow:hidden}
+    .page:before{content:"";position:absolute;width:150mm;height:150mm;border-radius:50%;background:rgba(242,140,40,.1);right:-90mm;top:-70mm}
+    .kicker{font:11px 'DM Mono',monospace;letter-spacing:.12em;text-transform:uppercase;color:var(--orange)}
+    .mono{font:10px 'DM Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+    h1{font-size:62px;line-height:.92;letter-spacing:-.08em;margin:35mm 0 12mm;max-width:160mm}h1 em{color:var(--orange);font-style:normal}h2{font-size:36px;line-height:1;letter-spacing:-.06em;margin:12mm 0 10mm}h3{font-size:18px;margin:0 0 5px;letter-spacing:-.03em}
+    p{font-size:14px;color:#4e575b;max-width:145mm}.lead{font-size:19px;line-height:1.45;max-width:135mm}
+    .cover-footer{position:absolute;bottom:18mm;left:18mm;right:18mm;display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:5mm}
+    .brand{font-size:22px;font-weight:800;letter-spacing:-.08em}.brand span{color:var(--orange)}
+    .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:5mm;margin-top:10mm}.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:8mm;min-height:42mm}.card strong{display:block;font-size:27px;letter-spacing:-.06em;color:var(--orange);margin-bottom:3mm}.card p{font-size:12px;margin:0}
+    .row{display:grid;grid-template-columns:16mm 1fr;gap:6mm;padding:7mm 0;border-top:1px solid var(--line)}.num{font:12px 'DM Mono',monospace;color:var(--orange)}.row p{margin:0;font-size:13px}
+    .timeline{margin-top:12mm;border-top:2px solid var(--ink)}.timeline .row:last-child{border-bottom:1px solid var(--line)}
+    .quote{background:var(--ink);color:#fff;border-radius:22px;padding:10mm;margin-top:12mm}.quote p{color:rgba(255,255,255,.75);font-size:16px}.quote strong{font-size:20px}
+    .checklist{list-style:none;padding:0;margin:8mm 0}.checklist li{padding:4mm 0;border-bottom:1px solid var(--line);font-size:13px}.checklist li:before{content:'✓';color:var(--orange);font-weight:800;margin-right:8px}
+    @media print{html{background:#fff}.page{margin:0;width:210mm;min-height:297mm}a{color:inherit;text-decoration:none}}
+    @media screen and (max-width:800px){.page{width:100%;min-height:auto;margin:0;padding:12vw 7vw}.cover-footer{position:static;margin-top:35vw}.grid{grid-template-columns:1fr}h1{font-size:16vw;margin-top:25vw}}
+  </style>
+</head>
+<body>
+  <section class="page">
+    <div class="kicker">Презентация цифрового продукта · 2026</div>
+    <div class="brand" style="margin-top:8mm"><span>F</span>ORMAT.</div>
+    <h1>Сайт<br><em>строительной</em><br>компании</h1>
+    <p class="lead">Современный имиджевый лендинг для презентации компании, её компетенций, реализованных проектов и удобного привлечения новых клиентов.</p>
+    <div class="cover-footer"><span class="mono">Portfolio / Product overview</span><span class="mono">construction-company-portfolio</span></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">01 / Что представляет собой сайт</div>
+    <h2>Первое впечатление<br>о компании</h2>
+    <p>Сайт FORMAT — это одностраничная презентация строительной компании в премиальном стиле. Он сразу показывает посетителю, чем занимается компания, почему ей можно доверять и как начать обсуждение проекта.</p>
+    <div class="grid">
+      <div class="card"><strong>01</strong><h3>Имидж</h3><p>Сайт формирует профессиональное восприятие бренда и выделяет компанию среди конкурентов.</p></div>
+      <div class="card"><strong>02</strong><h3>Портфолио</h3><p>Проекты представлены визуально — через крупные изображения, названия и категории объектов.</p></div>
+      <div class="card"><strong>03</strong><h3>Продажи</h3><p>Призывы к действию ведут клиента к консультации и упрощают первый контакт.</p></div>
+      <div class="card"><strong>04</strong><h3>Доверие</h3><p>Цифры, опыт, услуги и понятная структура помогают клиенту принять решение.</p></div>
+    </div>
+    <div class="quote"><strong>Главная идея</strong><p>Показать не просто строительную услугу, а надёжного партнёра, который отвечает за весь путь — от идеи и планирования до готового объекта.</p></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">02 / Структура страницы</div>
+    <h2>Каждый блок отвечает<br>на вопрос клиента</h2>
+    <div class="timeline">
+      <div class="row"><div class="num">01</div><div><h3>Hero-блок</h3><p>Крупный заголовок BUILD. RELIABLY., короткое позиционирование, фотография строительства, кнопка консультации и ключевые показатели.</p></div></div>
+      <div class="row"><div class="num">02</div><div><h3>Бегущая строка услуг</h3><p>Construction, Reconstruction, Renovation, Fit-out и Design создают динамику и быстро знакомят посетителя с направлениями работы.</p></div></div>
+      <div class="row"><div class="num">03</div><div><h3>О компании</h3><p>Блок объясняет подход FORMAT, показывает ценность инженерной точности, мастерства и прозрачного взаимодействия.</p></div></div>
+      <div class="row"><div class="num">04</div><div><h3>Избранные проекты</h3><p>Визуальная галерея демонстрирует коммерческие, частные и интерьерные проекты.</p></div></div>
+      <div class="row"><div class="num">05</div><div><h3>Услуги</h3><p>Генеральный подряд, ремонт и fit-out, проектирование и управление проектом собраны в понятный список.</p></div></div>
+      <div class="row"><div class="num">06</div><div><h3>Контактный блок</h3><p>Финальный CTA предлагает связаться с компанией по почте, телефону или через форму/канал коммуникации.</p></div></div>
+    </div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">03 / Составляющие сайта</div>
+    <h2>Что входит<br>в разработку</h2>
+    <ul class="checklist">
+      <li>Адаптивная HTML-структура для компьютеров, планшетов и телефонов.</li>
+      <li>Премиальная визуальная система: графитовый фон, бетонные светлые блоки и оранжевый акцент.</li>
+      <li>Крупная типографика Manrope и технические подписи DM Mono.</li>
+      <li>Sticky-навигация с якорными переходами по секциям.</li>
+      <li>Переключение русского и английского языка с сохранением выбора посетителя.</li>
+      <li>Меню для мобильных устройств с кнопкой открытия и закрытия.</li>
+      <li>Анимации появления карточек проектов и услуг при прокрутке.</li>
+      <li>Интерактивные hover-эффекты для изображений, кнопок и ссылок.</li>
+      <li>Кнопки связи: консультация, e-mail и переход к контактам.</li>
+      <li>SEO-описание страницы, семантическая разметка и alt-тексты изображений.</li>
+    </ul>
+    <div class="quote"><strong>Технологическая основа</strong><p>Проект выполнен на HTML5, CSS3 и Vanilla JavaScript. Это лёгкое решение без лишних зависимостей, которое просто разместить на обычном хостинге или GitHub Pages.</p></div>
+  </section>
+
+  <section class="page">
+    <div class="kicker">04 / Польза для покупателя</div>
+    <h2>Сайт работает<br>как менеджер 24/7</h2>
+    <div class="grid">
+      <div class="card"><strong>24/7</strong><h3>Всегда доступен</h3><p>Клиент может познакомиться с компанией и оставить заявку в любое время.</p></div>
+      <div class="card"><strong>01</strong><h3>Одна понятная история</h3><p>Все преимущества, услуги, проекты и контакты собраны на одной странице.</p></div>
+      <div class="card"><strong>↑</strong><h3>Больше доверия</h3><p>Профессиональный дизайн повышает ценность бренда и качество первого контакта.</p></div>
+      <div class="card"><strong>∞</strong><h3>Готов к ��азвитию</h3><p>В дальнейшем можно подключить форму заявок, CRM, аналитику, блог и дополнительные страницы.</p></div>
+    </div>
+    <h2 style="margin-top:22mm">Итог</h2>
+    <p>FORMAT — это готовая цифровая витрина строительной компании: визуально сильная, адаптивная, двуязычная и ориентированная на заявку. Страница подходит для портфолио, презентации перед заказчиками и использования в резюме компании.</p>
+    <div class="cover-footer"><span class="mono">Prepared for clients</span><span class="mono">FORMAT. built reliably</span></div>
+  </section>
+</body>
+</html>

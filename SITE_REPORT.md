@@ -1,31 +1,31 @@
-# Презентация сайта FORMAT
+# FORMAT Website Presentation
 
-## Кратко
+## Overview
 
-FORMAT — одностраничный сайт строительной компании в премиальном индустриальном стиле. Сайт представляет компанию, её услуги, портфолио и способы связи с потенциальным клиентом.
+FORMAT is a premium one-page construction company website. It presents the company, its services, portfolio and contact options in a clear, modern and conversion-focused format.
 
-## Что есть на сайте
+## What the website includes
 
-- Hero-блок с позиционированием `BUILD. RELIABLY.`
-- Ключевые показатели: проекты, опыт и повторные клиенты
-- Бегущая строка с направлениями работы
-- Блок «О компании» с описанием подхода
-- Галерея избранных проектов
-- Услуги: генеральный подряд, renovation & fit-out, дизайн и управление проектами
-- Контактный блок с e-mail, телефоном и городом
-- Английская и русская версии
-- Адаптивная мобильная версия
-- Мобильное меню и плавная навигация
-- Анимации появления блоков и hover-эффекты
+- Hero section with the `BUILD. RELIABLY.` positioning
+- Key metrics for completed projects, experience and repeat clients
+- Animated service marquee
+- About section explaining the company approach
+- Featured project gallery
+- Services: general contracting, renovation and fit-out, design and planning, and project management
+- Contact section with email, phone and location
+- English and Russian language versions
+- Responsive mobile layout
+- Mobile navigation and smooth anchor scrolling
+- Scroll reveal animations and hover interactions
 
-## Технологии
+## Technology
 
-Проект выполнен на HTML5, CSS3 и Vanilla JavaScript. Визуальная система использует Manrope и DM Mono, графитовую палитру, бетонные светлые поверхности и оранжевые акценты.
+The project is built with HTML5, CSS3 and Vanilla JavaScript. The visual system uses Manrope and DM Mono, a graphite and concrete palette, and orange accent colors.
 
-## По��ьза для покупателя
+## Benefits for the buyer
 
-Сайт работает как цифровая презентация компании 24/7: помогает быстро объяснить специализацию, показать качество работ, сформировать доверие и привести клиента к консультации.
+The website works as a 24/7 digital presentation of the company. It explains the company’s specialization, demonstrates the quality of its work, builds trust with potential clients and guides visitors toward a consultation.
 
 ## PDF
 
-Файл `site-report.html` подготовлен для печати в PDF. Откройте его в браузере и выберите **Печать → Сохранить как PDF**. Включите фоновую графику, чтобы сохранить фирменное оформление.
+The `site-report.html` file is prepared for PDF export. Open it in a browser and select **Print → Save as PDF**. Enable background graphics to preserve the branded design. An English PDF-ready version is available as `site-report-en.html`.
